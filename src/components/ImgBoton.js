@@ -1,14 +1,20 @@
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
+const botonImages = require.context('../assets', true);
 
+export const ImgBoton = ({valor}) => {
 
-export const ImgBoton = () => {
+  console.log(valor);
+
   return (
-    <div>ImgBoton</div>
+
+<>
+     <img src={botonImages(`./${valor}.png`)} />
+
+    </>
   )
 }
-
 
 export default ImgBoton;
