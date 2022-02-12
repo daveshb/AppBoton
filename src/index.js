@@ -4,8 +4,5 @@ import ReactDOM from "react-dom";
 import { BotonApp } from "./BotonApp";
 import './index.css';
 
-
-
-
 const divroot = document.querySelector('#root');
-ReactDOM.render( <BotonApp valor={'OFF'} />, divroot);
+ReactDOM.render( <BotonApp />, divroot);
